@@ -53,7 +53,7 @@ ORM
 
 ## 設計記録
 
-### node interface と IDフォーマット
+### node interface と ID フォーマット
 
 [Relay の GraphQL Server Specification](https://relay.dev/docs/guides/graphql-server-specification/) を満たすため、node interface を用意した。
 
