@@ -58,3 +58,5 @@ ORM
 [Relay の GraphQL Server Specification](https://relay.dev/docs/guides/graphql-server-specification/) を満たすため、node interface を用意した。
 
 node interface では「どのタイプがクエリされたか」が分からないので、すべてのタイプをクエリする必要が出てくる。これを避けるため、ID へタイプを表すプレフィックスを付加することにした。
+
+ID のタイププレフィックスは GraphQL のレイヤーだけで取り扱い、DB のレイヤーでは取り扱わないこともできる。つまり GraphQL のレイヤーでタイププレフィックスの付け外しをすることで、DB にはプレフィックスなしの ID を保存することができる。しかしコードが複雑化するため、今回は DB でも GraphQL と同じ ID を取り扱うことにした。
